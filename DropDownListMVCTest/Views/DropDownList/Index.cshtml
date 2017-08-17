@@ -1,0 +1,12 @@
+﻿
+
+<h2>Index</h2>
+
+@model DropDownListMVCTest.ViewModel.Programming
+
+@*//Without option label*@
+@Html.DropDownListFor(m => m.selectedId, Model.languanges)
+
+@*//With Option label*@
+<br />
+@Html.DropDownListFor(m => m.selectedId, Model.languanges, "--Select One--")
